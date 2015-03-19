@@ -1,5 +1,5 @@
 #Food for Life eDM
-##Based on Gulp recipe to build eDMs using HTML/SASS and have the styles moved inline.
+##Gulp recipe builds eDM using Jade/SASS and moves styles inline.
 
 ###Installation
 1. Clone the repo
