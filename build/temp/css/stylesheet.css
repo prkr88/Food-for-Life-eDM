@@ -1,11 +1,15 @@
 body {
-  font-family: Droid Sans, Helvetica, Arial, Verdana, Trebuchet MS;
+  font-family: Helvetica, Arial, Verdana, Trebuchet MS;
   min-width: 100% !important;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-text-size-adjust: none; }
 
 h1, h2, h3, h4, h5, p {
   margin: 0; }
+
+a {
+  color: #4D7EA8; }
 
 table {
   border-collapse: collapse;
@@ -18,17 +22,21 @@ table, tr, td, th {
   height: 400px; }
 
 .background {
-  background-image: url(http://i.imgur.com/OUUxZCe.jpg);
-  background-size: cover;
-  background-position: right; }
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover; }
 
 #content-container {
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-left: 10px;
+  padding-right: 10px; }
 
 .content {
-  max-width: 650px;
-  border: 3px solid #fff;
-  margin-bottom: -3px; }
+  max-width: 650px !important;
+  background: none;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff; }
   .content .content-td {
     padding-left: 20px;
     padding-right: 20px;
@@ -43,12 +51,41 @@ table, tr, td, th {
 
 .header {
   background-color: #FFF;
-  height: 80px; }
+  height: 80px;
+  text-align: center; }
 
 .hero {
-  background: rgba(255, 255, 255, 0.6);
-  height: 250px; }
+  background-color: #222;
+  color: #fff;
+  height: 250px;
+  padding: 20px;
+  text-align: center; }
 
 .banner {
-  background-color: #fff;
-  height: 80px; }
+  height: 80px;
+  background: #222;
+  color: #fff; }
+
+#details-container {
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #f8f8f8; }
+
+.details {
+  max-width: 650px;
+  border-bottom: 3px solid #fff;
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff; }
+  .details .details-td {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+#thumb-container {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.thumbs {
+  padding: 20px; }

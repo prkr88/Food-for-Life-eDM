@@ -4,6 +4,7 @@ var notify 		= require('gulp-notify');
 var inlineCss 	= require('gulp-inline-css');
 var jade		= require('gulp-jade');
 var email 		= require('gulp-email');
+var ghPages		= require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var reload 		= browserSync.reload;
 
@@ -13,7 +14,7 @@ var options = {
 	form: {
 		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
-		'Michael Parker <p88@me.com>', 
+		'Michael Parker <redharvestredharvest@gmail.com>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		],
@@ -85,4 +86,9 @@ gulp.task('serve', function(){
 
 //the dafault task
 gulp.task('default', ['watch', 'serve']);
+
+gulp.task('deploy', function(){
+	return gulp.src('./public/**/*')
+	.pipe(ghPages());
+});
 

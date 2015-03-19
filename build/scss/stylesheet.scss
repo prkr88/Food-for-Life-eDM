@@ -1,7 +1,7 @@
 //Use SASS styles
 
 
-$primary-font: Droid Sans, Helvetica, Arial, Verdana, Trebuchet MS;
+$primary-font: Helvetica, Arial, Verdana, Trebuchet MS;
 // $secondary-font: Din Alternant;
 
 
@@ -10,12 +10,16 @@ body {
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
+	-webkit-text-size-adjust: none;
 }
 
 h1, h2, h3, h4, h5, p {
 	margin: 0;
 }
 
+a {
+	color: #4D7EA8;
+}
 
 table {
 	border-collapse: collapse;
@@ -31,21 +35,27 @@ table, tr, td, th {
 }
 
 .background {
-	background-image: url(http://i.imgur.com/OUUxZCe.jpg);
+	// background-image: url(http://i.imgur.com/MRQdFFa.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
 	background-size: cover;
-	background-position: right;
 	// min-height: 400px;
 }
 
 #content-container {
 	padding-top: 40px;
-
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .content {
-	max-width: 650px;
-	border: 3px solid #fff;
-	margin-bottom: -3px;
+	max-width: 650px !important;
+	background: none;
+	border:{
+		top: 3px solid #fff;
+		left: 3px solid #fff;
+		right: 3px solid #fff;
+	}
 	.content-td {
 		padding:{
 			left: 20px;
@@ -67,23 +77,59 @@ table, tr, td, th {
 .header {
 	background-color: #FFF;
 	height: 80px;
+	text-align: center;
 }
 
 .hero {
-	background: rgba(255,255,255,0.6);
+	background-color: #222;
+	color: #fff;
 	height: 250px;
+	padding:20px;
+	text-align: center;
 }
 
 .banner {
-	background-color: #fff;
+	// background-color: #fff;
 	height: 80px;
+	background:#222; 
+	color:#fff
+}
+
+#details-container {
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #f8f8f8;
+}
+
+.details {
+	max-width: 650px;
+	border:{
+		bottom: 3px solid #fff;
+		left: 3px solid #fff;
+		right: 3px solid #fff;
+	}
+	// min-height: 200px;
+	// background-color: #FFF;
+	.details-td {
+		padding:{
+			left: 20px;
+			right: 20px;
+			top: 10px;
+			bottom: 10px;
+		}
+	}
 }
 
 
+#thumb-container {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
 
-
-
-
+.thumbs {
+	padding: 20px;
+}
 
 
 
