@@ -9,21 +9,25 @@ html(lang='en')
 		title Food for Life
 	
 	body(bgcolor="#fff")
-		//- <!--[if gte mso 9]>
-		//- <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-		//- <v:fill type="frame" src="http://i.imgur.com/MRQdFFa.jpg" color="#f8f8f8"/>
-		//- </v:background>
-		//- <![endif]-->
-
+		<!--[if gte mso 9]>
+		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
+		<v:fill color="#f2f2f2"/>
+		</v:background>
+		<![endif]-->
+		<!--[if gte mso 9]>
+		<div style="text-align:center">
+		<a href="http://prkr88.github.io/Food-for-Life-eDM/">This content is best viewed in your browser</a>
+		</div>
+		<![endif]-->
 		//- include @imports as inline-styles
 		include import-styles.jade
 
 		//-Body wrapper for full width backgrounds
-		table(cellpadding="0", cellspacing="0", width="100%", bgcolor="#333", align="center").background
+		table(cellpadding="0", cellspacing="0", width="100%", height="100%" bgcolor="#f2f2f2", align="center").background
 			tr
 				//- Content wrapper
 				td(id="content-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="650", align="center").content
+					table(cellpadding="0", cellspacing="0", width="600", align="center").content
 						//- Row 1
 						tr
 							td.content-td
@@ -35,7 +39,7 @@ html(lang='en')
 						tr
 							td.content-td
 								//- Hero container
-								table(id="hero-container" bgcolor="#222")
+								table(id="hero-container")
 									tr
 										td.hero
 											include hero.jade
@@ -50,13 +54,13 @@ html(lang='en')
 			tr
 				//- content wrapper
 				td(id="details-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="650", align="center").details
+					table(cellpadding="0", cellspacing="0", width="600", align="center").details
 						tr
 							td.details-td
 								table(id="thumb-container")
 									tr
 										td(bgcolor="#fff", height="100").thumbs
-											p below the fold content
+											p -Below the fold content-
 
 
 

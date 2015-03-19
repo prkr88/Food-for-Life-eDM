@@ -24,10 +24,16 @@ a {
 table {
 	border-collapse: collapse;
 	width: 100%;
+	min-width: 400px;
 }
 
 table, tr, td, th {
 	border: none;
+}
+
+td {
+	padding: 0;
+	margin: 0;
 }
 
 .spacer {
@@ -35,7 +41,7 @@ table, tr, td, th {
 }
 
 .background {
-	// background-image: url(http://i.imgur.com/MRQdFFa.jpg);
+	background-image: url(http://i.imgur.com/MRQdFFa.jpg);
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-size: cover;
@@ -49,7 +55,7 @@ table, tr, td, th {
 }
 
 .content {
-	max-width: 650px !important;
+	max-width: 600px !important;
 	background: none;
 	border:{
 		top: 3px solid #fff;
@@ -76,15 +82,31 @@ table, tr, td, th {
 
 .header {
 	background-color: #FFF;
-	height: 80px;
-	text-align: center;
+	.logoContainer {
+		padding-left: 20px;
+	}
+	.navBar {
+		display: block;
+		width: inherit;
+		background-color: #57c229;
+		padding: 12px;
+		font-size: 12px;
+		font-weight: bold;
+		color: #fff;
+		text-align: center;
+		& a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+	// text-align: center;
 }
 
 .hero {
-	background-color: #222;
+	// background-color: #222;
 	color: #fff;
 	height: 250px;
-	padding:20px;
+	// padding:20px;
 	text-align: center;
 }
 
@@ -103,7 +125,7 @@ table, tr, td, th {
 }
 
 .details {
-	max-width: 650px;
+	max-width: 600px;
 	border:{
 		bottom: 3px solid #fff;
 		left: 3px solid #fff;
@@ -121,7 +143,6 @@ table, tr, td, th {
 	}
 }
 
-
 #thumb-container {
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -129,6 +150,7 @@ table, tr, td, th {
 
 .thumbs {
 	padding: 20px;
+	text-align: center;
 }
 
 

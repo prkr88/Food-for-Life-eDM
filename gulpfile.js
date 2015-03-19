@@ -14,7 +14,8 @@ var options = {
 	form: {
 		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
-		'Michael Parker <redharvestredharvest@gmail.com>', 
+		'Michael Parker <redharvestredharvest@gmail.com>',
+		// 'Michael Parker <mparker@brandnewmedia.com.au>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		],
