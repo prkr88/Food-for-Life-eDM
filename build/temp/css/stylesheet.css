@@ -12,9 +12,7 @@ a {
   color: #4D7EA8; }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
-  min-width: 400px; }
+  border-collapse: collapse; }
 
 table, tr, td, th {
   border: none; }
@@ -38,32 +36,20 @@ td {
   padding-right: 10px; }
 
 .content {
-  max-width: 600px !important;
   background: none;
   border-top: 3px solid #fff;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff; }
   .content .content-td {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-
-#header-container {
-  margin-top: 10px; }
-
-#banner-container {
-  margin-bottom: 10px; }
+    line-height: 20px; }
 
 .header {
   background-color: #FFF; }
   .header .logoContainer {
     padding-left: 20px; }
   .header .navBar {
-    display: block;
-    width: inherit;
     background-color: #57c229;
-    padding: 12px;
+    padding-top: 2px;
     font-size: 12px;
     font-weight: bold;
     color: #fff;
@@ -74,7 +60,6 @@ td {
 
 .hero {
   color: #fff;
-  height: 250px;
   text-align: center; }
 
 .banner {
@@ -89,7 +74,6 @@ td {
   background-color: #f8f8f8; }
 
 .details {
-  max-width: 600px;
   border-bottom: 3px solid #fff;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff; }
@@ -98,10 +82,6 @@ td {
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px; }
-
-#thumb-container {
-  margin-top: 10px;
-  margin-bottom: 10px; }
 
 .thumbs {
   padding: 20px;

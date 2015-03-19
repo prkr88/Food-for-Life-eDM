@@ -8,7 +8,13 @@
     <title>Food for Life</title>
   </head>
   <body bgcolor="#fff">
-    <!--[if gte mso 9]>
+    <button style="position: absolute" onClick="hideImage()">preivewIE</button>
+    <script>
+      var hideImage = function(){
+      	console.log("hide image");
+      	document.getElementById('background').style.backgroundImage = 'none';
+      }
+    </script><!--[if gte mso 9]>
     <v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
     <v:fill color="#f2f2f2"/>
     </v:background>
@@ -19,30 +25,31 @@
     </div>
     <![endif]-->
     <style>@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600|Roboto:400,500,300,700italic|Hind:400,500,600,700,300);</style>
-    <table cellpadding="0" cellspacing="0" width="100%" height="100%" bgcolor="#f2f2f2" align="center" class="background">
+    <table cellpadding="0" cellspacing="0" width="100%" height="100%" bgcolor="#f2f2f2" align="center" id="background" class="background">
       <tr>
         <td id="content-container" valign="top">
-          <table cellpadding="0" cellspacing="0" width="600" align="center" class="content">
+          <table cellpadding="0" cellspacing="0" width="650" align="center" class="content">
             <tr>
-              <td class="content-td">
-                <table id="header-container" bgcolor="#fff">
+              <td align="center" class="content-td"><span>&nbsp;</span>
+                <table id="header-container" bgcolor="#fff" width="600" cellpadding="0" cellspacing="0">
                   <tr>
                     <td class="header">
-                      <table>
+                      <table width="600">
                         <tr>
                           <td>
                             <div class="logoContainer"><img src="http://www.foodforlifetv.sg/sites/default/files/channel-logos/ffl-logo.png" width="220" height="80" alt="Food for Life"></div>
                           </td>
-                          <td style="text-align:center"><img hieght="80" alt="ad/promo here"></td>
+                          <td style="text-align:center">
+                          </td>
                         </tr>
                       </table>
                       <div class="navBar">
-                        <table>
+                        <table width="100%" height="30">
                           <tr>
-                            <td> <a href="">NAV ITEM</a></td>
-                            <td> <a href="">SECOND ITEM</a></td>
-                            <td> <a href="">THIRD ITEM</a></td>
-                            <td> <a href="">ANOTHER ITEM</a></td>
+                            <td style="border-right:1px solid green"> <a href="">VIDEO COOKBOOK</a></td>
+                            <td style="border-right:1px solid green"> <a href="">COOK SCHOOL</a></td>
+                            <td style="border-right:1px solid green"> <a href="">HEALTHY RECIPIES</a></td>
+                            <td> <a href="">PRODUCT REVIEWS</a></td>
                           </tr>
                         </table>
                       </div>
@@ -52,14 +59,23 @@
               </td>
             </tr>
             <tr>
-              <td class="content-td">
-                <table id="hero-container">
+              <td align="center" class="content-td"><span>&nbsp;</span>
+                <table id="hero-container" width="600" cellpadding="0" cellspacing="0">
                   <tr>
                     <td class="hero">
-                      <table width="100%" height="100%">
+                      <table cellpadding="0" cellspacing="0" width="600">
                         <tr>
-                          <td width="60%" height="100%" style="background:#fff; color: #222; border: 2px solid #fff"><span>-first cell content-</span></td>
-                          <td height="100%" style="border: 2px solid #fff;"><span>-second cell content-</span></td>
+                          <td height="300" width="350" style="color: #222; border: 2px solid #fff">
+                            <table cellpadding="0" cellspacing="0" height="100%" width="100%">
+                              <tr>
+                                <td><span style="background:yellow">Thumbnail image goes here</span></td>
+                              </tr>
+                              <tr height="60" valign="bottom" bgcolor="#fff" width="100%">
+                                <td valign="top"><span style="background:black;color:#fff">Video title and description</span></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td width="250" style="border: 2px solid #fff;"><span>-second cell content-</span></td>
                         </tr>
                       </table>
                     </td>
@@ -68,8 +84,8 @@
               </td>
             </tr>
             <tr>
-              <td class="content-td">
-                <table id="banner-container" bgcolor="#222">
+              <td align="center" class="content-td"><span>&nbsp;</span>
+                <table id="banner-container" bgcolor="#222" width="600">
                   <tr>
                     <td class="banner">
                       <div style="width:inherit; height:100%; display: block; border-collapse: collapse" class="banner-ad">
@@ -77,17 +93,17 @@
                       </div>
                     </td>
                   </tr>
-                </table>
+                </table><span>&nbsp;</span>
               </td>
             </tr>
           </table>
         </td>
       </tr>
     </table>
-    <table cellpadding="0" cellspacing="0" width="100%" height="300" align="center">
+    <table cellpadding="0" cellspacing="0" width="100%" height="100%" align="center">
       <tr>
         <td id="details-container" valign="top">
-          <table cellpadding="0" cellspacing="0" width="600" align="center" class="details">
+          <table cellpadding="0" cellspacing="0" width="650" align="center" class="details">
             <tr>
               <td class="details-td">
                 <table id="thumb-container">

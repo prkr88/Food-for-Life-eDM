@@ -9,6 +9,12 @@ html(lang='en')
 		title Food for Life
 	
 	body(bgcolor="#fff")
+		button(style="position: absolute", onClick="hideImage()") preivewIE
+		script.
+			var hideImage = function(){
+				console.log("hide image");
+				document.getElementById('background').style.backgroundImage = 'none';
+			}
 		<!--[if gte mso 9]>
 		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
 		<v:fill color="#f2f2f2"/>
@@ -23,44 +29,50 @@ html(lang='en')
 		include import-styles.jade
 
 		//-Body wrapper for full width backgrounds
-		table(cellpadding="0", cellspacing="0", width="100%", height="100%" bgcolor="#f2f2f2", align="center").background
+		table(cellpadding="0", cellspacing="0", width="100%", height="100%" bgcolor="#f2f2f2", align="center", id="background").background
 			tr
 				//- Content wrapper
 				td(id="content-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="600", align="center").content
-						//- Row 1
+					table(cellpadding="0", cellspacing="0", width="650", align="center").content
+						-// Row 1
 						tr
-							td.content-td
-								//- Logo container
-								table(id="header-container" bgcolor="#fff")
+							td.content-td(align="center")
+								-// Logo container
+								span &nbsp;
+								table(id="header-container", bgcolor="#fff", width="600", cellpadding="0", cellspacing="0")
 									tr
 										td.header
 											include header.jade
 						tr
-							td.content-td
-								//- Hero container
-								table(id="hero-container")
+							td.content-td(align="center")
+								-// Hero container
+								span &nbsp;
+								table(id="hero-container", width="600", cellpadding="0", cellspacing="0",)
 									tr
 										td.hero
 											include hero.jade
 						tr
-							td.content-td
-								//- Banner container
-								table(id="banner-container" bgcolor="#222")
+							td.content-td(align="center")
+								-// Banner container
+								span &nbsp;
+								table(id="banner-container" bgcolor="#222", width="600")
 									tr
 										td.banner
 											include banner.jade
-		table(cellpadding="0", cellspacing="0", width="100%", height="300", align="center")
+								span &nbsp;
+
+		table(cellpadding="0", cellspacing="0", width="100%", height="100%", align="center")
 			tr
 				//- content wrapper
 				td(id="details-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="600", align="center").details
+					table(cellpadding="0", cellspacing="0", width="650", align="center").details
 						tr
 							td.details-td
 								table(id="thumb-container")
 									tr
 										td(bgcolor="#fff", height="100").thumbs
 											p -Below the fold content-
+
 
 
 
