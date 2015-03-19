@@ -69,7 +69,6 @@ gulp.task('inline', ['build'], function(){
 });
 
 
-
 //compile on change
 gulp.task('watch', function(){
 	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['inline']);
@@ -88,6 +87,7 @@ gulp.task('serve', function(){
 //the dafault task
 gulp.task('default', ['watch', 'serve']);
 
+//deploy to github-pages
 gulp.task('deploy', function(){
 	return gulp.src('./public/**/*')
 	.pipe(ghPages());
