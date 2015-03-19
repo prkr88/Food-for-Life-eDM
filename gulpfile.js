@@ -3,7 +3,6 @@ var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
 var inlineCss 	= require('gulp-inline-css');
 var jade		= require('gulp-jade');
-// var mailer		= require('gulp-mail');
 var email 		= require('gulp-email');
 var browserSync = require('browser-sync');
 var reload 		= browserSync.reload;
@@ -12,8 +11,12 @@ var options = {
 	user: 'api:key-a51cf11f46a793c555e2447cdd681e8f',
 	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
 	form: {
-		from: 'eDM Test <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
-		to: 'Michael Parker <parker_michael@me.com>',
+		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
+		to: [
+		'Michael Parker <p88@me.com>', 
+		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
+		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
+		],
 		subject: 'eDM Test'
 	}
 };
@@ -63,10 +66,7 @@ gulp.task('inline', ['build'], function(){
 		.pipe(reload({stream: true}));
 });
 
-// gulp.task('move', function(){
-// 	return gulp.src('./build/temp/**/*')
-// 		.pipe(gulp.dest('./public'))
-// });
+
 
 //compile on change
 gulp.task('watch', function(){
