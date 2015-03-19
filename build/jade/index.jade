@@ -1,0 +1,20 @@
+html(lang='en')
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="Content-Type", content="text/html")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+
+		//- styles will be moved inline
+		link(type='text/css', rel='stylesheet', href='/css/stylesheet.css')
+		title Food for life
+	body
+		include import-styles.jade
+
+		//- h1 Testing fonts
+		h1#open-sans Open Sans Heading
+		h1#roboto Roboto Heading
+		h1#hind Hind Heading
+
+		.container
+			p container text over multiple lines
+			include hero.jade
