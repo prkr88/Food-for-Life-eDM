@@ -17,7 +17,7 @@ var options = {
 		// 'Michael Parker <redharvestredharvest@gmail.com>',
 		'Michael Parker <mparker@brandnewmedia.com.au>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
-		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
+		'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		],
 		subject: 'eDM Test'
 	}
@@ -29,8 +29,13 @@ gulp.task('send', function(){
 		.pipe(email(options));
 });
 
+gulp.task('move', function(){
+	return gulp.src('./build/img/*')
+	.pipe(gulp.dest('./public/assets/'))
+})
+
 //compile jade, catch errors before compile. 
-gulp.task('jade', function () {
+gulp.task('jade',['move'], function () {
 	var j = jade({
 		pretty: true
 	});

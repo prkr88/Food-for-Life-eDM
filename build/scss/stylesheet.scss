@@ -1,16 +1,17 @@
 //Use SASS styles
 
 
-$primary-font: Helvetica, Arial, Verdana, Trebuchet MS;
+$primary-font: Arial, Verdana, Trebuchet MS;
 // $secondary-font: Din Alternant;
 
 
 body {
-	font-family: $primary-font;
+	font-family: $primary-font !important;
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
 	-webkit-text-size-adjust: none;
+	background-color: #f8f8f8;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -25,7 +26,7 @@ table {
 	border-collapse: collapse;
 }
 
-table, tr, td, th {
+table, tr, td, th, img {
 	border: none;
 }
 
@@ -36,6 +37,15 @@ td {
 
 .spacer {
 	height: 400px;
+}
+.placeholder {
+	background-color: yellow;
+	color:black;
+	text-align: center;
+}
+
+.loadFont{
+	font-family: $primary-font !important;
 }
 
 .background {
@@ -54,7 +64,8 @@ td {
 
 .content {
 	// max-width: 600px !important;
-	background: none;
+	background:none;
+	background-color: rgba(255, 255, 255, 0.3);
 	border:{
 		top: 3px solid #fff;
 		left: 3px solid #fff;
@@ -64,6 +75,7 @@ td {
 		line-height: 20px;
 	}
 }
+
 
 #header-container {
 	// margin-top: 10px;
@@ -77,23 +89,29 @@ td {
 		padding-left: 20px;
 	}
 	.navBar {
-		background-color: #57c229;
-		padding-top: 2px;
 		font-size: 12px;
 		font-weight: bold;
+		font-family: $primary-font;
 		color: #fff;
 		text-align: center;
+		line-height: 30px;
 		& a {
-			color: inherit;
+			color: #fff;
 			text-decoration: none;
-			// border-bottom: 1px dotted white;
+			font-size: 12px;
+			font-weight: bold;
+			font-family: $primary-font;
+			color: #fff;
+		}
+		.navLink{
+			color: #fff !important;
+			text-decoration: none !important;
+			font-size: 12px !important;
+			font-weight: bold !important;
+			font-family: $primary-font;
+			color: #fff !important;
 		}
 	}
-}
-
-.hero {
-	color: #fff;
-	text-align: center;
 }
 
 .banner {
