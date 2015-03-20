@@ -18,7 +18,14 @@
     <a style="color:blue; text-decoration:underline !important; font-family:Arial !important; font-size: 12px !important" href="http://prkr88.github.io/Food-for-Life-eDM/">Open in Browser</a>
     </div>
     <![endif]-->
-    <style>@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600|Roboto:400,500,300,700italic|Hind:400,500,600,700,300);</style>
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600|Roboto:400,500,300,700italic|Hind:400,500,600,700,300);
+      @media and screen(min-width="300px"){
+      	.content{
+      		width: 100% !important;
+      	}
+      }
+    </style>
     <table cellpadding="0" cellspacing="0" width="100%" height="100%" bgcolor="#f2f2f2" align="center" id="background" class="background">
       <tr>
         <td id="content-container" valign="top">
@@ -74,8 +81,9 @@
                           </td>
                           <td valign="top">
                             <table width="100%" cellpadding="0" cellspacing="0" bgcolor="#fff">
-                              <tr height="50">
-                                <td style="padding:15px;background-color:#333" class="loadFont"> <span style="background-color:#fff;padding:4px;font-size:12px;font-weight:bold;line-height:12px;color:#333">POPULAR THIS WEEK</span>
+                              <tr>
+                                <td style="padding:8px 8px 6px 10px;background-color:#333" class="loadFont"> 
+                                  <h4 style="font-size:12px;line-height:14px;color:#fff" class="loadFont">POPULAR THIS WEEK</h4>
                                 </td>
                               </tr>
                               <tr bgcolor="#fff" style="border-bottom:1px solid #f2f2f2">
@@ -117,6 +125,9 @@
                                   </table>
                                 </td>
                               </tr>
+                              <tr bgcolor="#fff">
+                                <td style="padding:2px;text-align:center;font-size:10px;line-height:20px"><span class="linkContainer"><a href="">SEE MORE</a></span></td>
+                              </tr>
                             </table>
                           </td>
                         </tr>
@@ -144,6 +155,7 @@
                     <td bgcolor="#fff" height="100" class="thumbs"><span class="placeholder">-Below the fold content to be injected here-</span></td>
                   </tr>
                 </table><span>&nbsp;</span>
+                <div class="spacer"></div>
               </td>
             </tr>
           </table>

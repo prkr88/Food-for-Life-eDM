@@ -17,7 +17,7 @@ var options = {
 		// 'Michael Parker <redharvestredharvest@gmail.com>',
 		'Michael Parker <mparker@brandnewmedia.com.au>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
-		'Aron Du-Shane <adushane@brandnewmedia.com.au>'
+		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
 		],
 		subject: 'eDM Test'
 	}
