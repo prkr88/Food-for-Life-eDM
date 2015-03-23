@@ -6,7 +6,7 @@ $primary-font: Arial, Verdana, Trebuchet MS;
 
 
 body {
-	font-family: $primary-font !important;
+	font-family: $primary-font;
 	min-width: 100% !important;
 	margin: 0;
 	padding: 0;
@@ -48,7 +48,7 @@ td {
 .placeholder {
 	background-color: yellow;
 	color:black;
-	text-align: center;
+	// text-align: center;
 }
 
 .loadFont{
@@ -170,7 +170,13 @@ td {
 	text-align: center;
 }
 
-
+#videoThumb{
+	padding-right:15px;
+	padding-bottom:15px;
+	&:last-child{
+		padding-right:0px;
+	} 
+}
 
 
 

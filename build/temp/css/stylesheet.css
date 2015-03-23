@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Verdana, Trebuchet MS !important;
+  font-family: Arial, Verdana, Trebuchet MS;
   min-width: 100% !important;
   margin: 0;
   padding: 0;
@@ -31,8 +31,7 @@ td {
 
 .placeholder {
   background-color: yellow;
-  color: black;
-  text-align: center; }
+  color: black; }
 
 .loadFont {
   font-family: Arial, Verdana, Trebuchet MS !important; }
@@ -113,3 +112,9 @@ td {
 .thumbs {
   padding: 20px;
   text-align: center; }
+
+#videoThumb {
+  padding-right: 15px;
+  padding-bottom: 15px; }
+  #videoThumb:last-child {
+    padding-right: 0px; }

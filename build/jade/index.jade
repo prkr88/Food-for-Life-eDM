@@ -9,6 +9,15 @@ html(lang='en')
 		title Food for Life
 	
 	body(bgcolor="#fff")
+
+		//- email preview description 
+		table(style={'position':'absolute', 'visibility':'hidden', 'opacity':'0', 'top':'-100%', 'color':'#fff'})
+			tr
+				td(height="0")
+					span(style={'color':'#fff'}).
+						This week discover the secret to the best chili crab, a perfect eton mess and a quick salad dressing. 
+						New recipe ideas and exciting new videos from the Food for Life network. 
+
 		<!--[if gte mso 9]>
 		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
 		<v:fill color="#f2f2f2"/>
@@ -20,6 +29,7 @@ html(lang='en')
 		</div>
 		<![endif]-->
 		//- include @imports as inline-styles
+
 		include import-styles.jade
 
 		//-Body wrapper for full width backgrounds
@@ -64,12 +74,15 @@ html(lang='en')
 						tr
 							td.content-td(align="center")
 								span &nbsp;
-								table(id="thumb-container", width="600")
+								table(width="600")
 									tr
-										td(bgcolor="#fff", height="100").thumbs
-											span.placeholder -Below the fold content to be injected here-
-								span &nbsp;
-								.spacer
+										td
+											h2 More great recepies
+											span &nbsp;
+									tr
+										td
+											include video_thumb.jade
+
 
 
 

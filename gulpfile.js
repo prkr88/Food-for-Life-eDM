@@ -14,7 +14,7 @@ var options = {
 	form: {
 		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
-		// 'Michael Parker <redharvestredharvest@gmail.com>',
+		'Michael Parker <redharvestredharvest@gmail.com>',
 		'Michael Parker <mparker@brandnewmedia.com.au>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
@@ -74,9 +74,16 @@ gulp.task('inline', ['build'], function(){
 });
 
 
+gulp.task('tempTask', ['inline'], function(){
+	return gulp.src('./build/temp/video_thumb.html')
+		.pipe(gulp.dest('./public/'))
+		.pipe(reload({stream: true}));
+
+})
+
 //compile on change
 gulp.task('watch', function(){
-	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['inline']);
+	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['tempTask']);
 });
 
 //serve to the browser
@@ -90,7 +97,7 @@ gulp.task('serve', function(){
 });
 
 //the dafault task
-gulp.task('default', ['watch', 'serve']);
+gulp.task('default', ['watch', 'serve', 'tempTask']);
 
 //deploy to github-pages
 gulp.task('deploy', function(){
