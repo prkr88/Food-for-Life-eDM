@@ -1,70 +1,35 @@
-- var row1 = [{}, {}, {}]
-- var row2 = [{}, {}, {}]
-
-//- Manualy define the content (for now)
-- row1[0].link = "http://referal link goes here"
-- row1[0].photoSrc = "http://www.vailcascade.com/atwater/images/masthead/int-mh-dessert.jpg"
-- row1[0].photoAlt = "Some Alt Text"
-- row1[0].category = "THE CATEGORY"
-- row1[0].title = "The video title goes here"
-
-- row1[1].link = "http://referal link goes here"
-- row1[1].photoSrc = "http://www.solutionstalk.com/home/wp-content/uploads/menu-pic-dessert-minis.jpg"
-- row1[1].photoAlt = "Some Alt Text"
-- row1[1].category = "THE CATEGORY"
-- row1[1].title = "The video title goes here"
-
-- row1[2].link = "http://referal link goes here"
-- row1[2].photoSrc = "http://www.savourychef.com/wp-content/gallery/sweet-plates/raspberry_dessert.jpg"
-- row1[2].photoAlt = "Some Alt Text"
-- row1[2].category = "THE CATEGORY"
-- row1[2].title = "The video title goes here over multiple lines"
-
-- row2[0].link = "http://referal link goes here"
-- row2[0].photoSrc = "http://www.societybride.com/assets/modern-red-orange-fairy-woodland-boho-brown-caramel-black-green-polka-dot-eco-friendly-organic-vintage-retro-dessert-table-candy-cupcake-cupcakes-wedding-shower-birthday-party-theme-bridal-baby-children-kids-stylized-shoot-erin-johnson-photography-5.jpg"
-- row2[0].photoAlt = "Some Alt Text"
-- row2[0].category = "THE CATEGORY"
-- row2[0].title = "The video title goes here"
-
-- row2[1].link = "http://referal link goes here"
-- row2[1].photoSrc = "http://s3.amazonaws.com/gmi-digital-library/9a7af2b1-aff0-4b4f-9189-10bff5c4336e.jpg"
-- row2[1].photoAlt = "Some Alt Text"
-- row2[1].category = "THE CATEGORY"
-- row2[1].title = "The video title goes here"
-
-- row2[2].link = "http://referal link goes here"
-- row2[2].photoSrc = "https://sunshineser.files.wordpress.com/2011/10/dessert.gif"
-- row2[2].photoAlt = "Some Alt Text"
-- row2[2].category = "THE CATEGORY"
-- row2[2].title = "The video title goes here"
-
-
-
+include datasheet.jade
 
 table(border="0", cellpadding="0", cellspacing="0", width="600")
 	tr
 		for t in row1
 			td(border="0", id="videoThumb", valign="top", width="280")
-				table(cellpadding="0", cellspacing="0", bgcolor="#fff")
-					tr
-						td(height="118", bgcolor="#fff", style={'text-align': 'center', 'color': 'white'})
-							img(width="100%", height="100%", alt= t.photoAlt, src=t.photoSrc)
-					tr
-						td(style={'padding':'10px 10px 20px 10px'}, )
-							span(style={'font-size':'12px', 'font-weight':'bold', 'line-height':'20px', 'color': '#57c229'})= t.category 
-							br 
-							span(style={'font-size':'16px', 'line-height':'20px'})= t.title
+				a(href=t.link, style={'color': '#000'})
+					table(cellpadding="0", cellspacing="0", bgcolor="#fff")
+						tr
+							td(height="118", bgcolor="#fff", style={'text-align': 'center', 'color': 'white'})
+								img(width="100%", height="100%", alt= t.photoAlt, src= t.photoSrc)
+						tr
+							td(style={'padding':'10px 10px 20px 10px'}, )
+								span(style={'font-size':'12px', 'font-weight':'bold', 'line-height':'20px', 'color': '#57c229'}).loadFont= t.category 
+								br 
+								span(style={'font-size':'16px', 'line-height':'20px'}).loadFont= t.title
 
 table(border="0", cellpadding="0", cellspacing="0", width="600")
 	tr
 		for t in row2
 			td(border="0", id="videoThumb", valign="top", width="280")
-				table(cellpadding="0", cellspacing="0", bgcolor="#fff")
-					tr
-						td(height="118", bgcolor="#fff", style={'text-align': 'center', 'color': 'white'})
-							img(width="100%", height="100%", alt= t.photoAlt, src=t.photoSrc)
-					tr
-						td(style={'padding':'10px 10px 20px 10px'}, )
-							span(style={'font-size':'12px', 'font-weight':'bold', 'line-height':'20px', 'color': '#57c229'})= t.category 
-							br 
-							span(style={'font-size':'16px', 'line-height':'20px'})= t.title
+				a(href=t.link, style={'color': '#000'})
+					table(cellpadding="0", cellspacing="0", bgcolor="#fff")
+						tr
+							td(height="118", bgcolor="#fff", style={'text-align': 'center', 'color': 'white'})
+								img(width="100%", height="100%", alt= t.photoAlt, src= t.photoSrc)
+						tr
+							td(style={'padding':'10px 10px 20px 10px'}, )
+								span(style={'font-size':'12px', 'font-weight':'bold', 'line-height':'20px', 'color': '#57c229'}).loadFont= t.category 
+								br 
+								span(style={'font-size':'16px', 'line-height':'20px'}).loadFont= t.title
+
+
+
+

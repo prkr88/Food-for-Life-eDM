@@ -10,14 +10,10 @@ html(lang='en')
 	
 	body(bgcolor="#fff")
 
-		//- email preview description 
-		table(style={'position':'absolute', 'visibility':'hidden', 'opacity':'0', 'top':'-100%', 'color':'#fff'})
-			tr
-				td(height="0")
-					span(style={'color':'#fff'}).
-						This week discover the secret to the best chili crab, a perfect eton mess and a quick salad dressing. 
-						New recipe ideas and exciting new videos from the Food for Life network. 
+		//Include a message with the eDM as a flag
+		//- include flag.jade
 
+		
 		<!--[if gte mso 9]>
 		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
 		<v:fill color="#f2f2f2"/>
@@ -32,12 +28,20 @@ html(lang='en')
 
 		include import-styles.jade
 
+		//- hidden email preview description
+		.description
+			p(style={'color':'#fff', 'font-size': '0px'}).
+				This week discover the secret to the best chili crab, a perfect eton mess and a quick salad dressing. 
+				New recipe ideas and exciting new videos from the Food for Life network.
+
 		//-Body wrapper for full width backgrounds
 		table(cellpadding="0", cellspacing="0", width="100%", height="100%" bgcolor="#f2f2f2", align="center", id="background").background
+
+
 			tr
 				//- Content wrapper
 				td(id="content-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="100%", align="center").content
+					table(cellpadding="0", cellspacing="0", width="600", align="center").content
 						//- row 1
 						tr
 							td.content-td(align="center")
@@ -51,18 +55,18 @@ html(lang='en')
 							td.content-td(align="center")
 								//- Hero container
 								span &nbsp;
-								table(id="hero-container", width="600", cellpadding="0", cellspacing="0",)
+								table(id="hero-container", width="600", cellpadding="0", cellspacing="0")
 									tr
 										td.hero
 											include hero.jade
 						tr
-							//- td.content-td(align="center")
-							//- Banner container
-							//- 	span &nbsp;
-							//- 	table(id="banner-container" bgcolor="#222", width="600")
-							//- 		tr
-							//- 			td.banner
-							//- 				include banner.jade
+							td.content-td(align="center")
+								span &nbsp;
+								table(id="banner-container" cellpadding="0", cellspacing="0" bgcolor="#222", width="600")
+									tr
+										td.banner
+											include banner.jade
+						tr
 							td
 								span &nbsp;
 	
@@ -70,18 +74,25 @@ html(lang='en')
 			tr
 				//- content wrapper
 				td(id="details-container", valign="top")
-					table(cellpadding="0", cellspacing="0", width="100%", align="center").details
+					table(cellpadding="0", cellspacing="0", width="600", align="center").details
 						tr
 							td.content-td(align="center")
 								span &nbsp;
 								table(width="600")
 									tr
 										td
-											h2 More great recepies
+											h2.loadFont More great recepies
 											span &nbsp;
 									tr
 										td
 											include video_thumb.jade
+						tr
+							td
+								span &nbsp;
+								table(cellpadding="0", cellspacing="0", width="100%", height="100%", align="center")
+												tr
+													td
+														include footer.jade
 
 
 

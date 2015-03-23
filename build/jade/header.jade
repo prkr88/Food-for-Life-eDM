@@ -1,3 +1,5 @@
+include datasheet.jade
+
 table(width="600")
 	tr
 		td
@@ -5,20 +7,13 @@ table(width="600")
 				img(src="http://www.foodforlifetv.sg/sites/default/files/channel-logos/ffl-logo.png", width="220", height="80", alt="Food for Life")
 
 		td(style="text-align:center")
+			span.placeholder -ad or promo can be injected here -
 			//- img(hieght="80", alt="ad/promo here")
 	
 .navBar
 	table(width="100%", height="30", bgcolor="#57c229", align="center")
 		tr
-			td(style={'border-right':'1px solid green'}) 
-				span.navLink
-					a(href="") VIDEO COOKBOOK
-			td(style={'border-right':'1px solid green'}) 
-				span.navLink
-					a(href="") COOK SCHOOL
-			td(style={'border-right':'1px solid green'}) 
-				span.navLink
-					a(href="") HEALTHY RECIPIES
-			td 
-				span.navLink
-					a(href="") PRODUCT REVIEWS
+			for i in navItems				
+				td
+					a(href=i.link)
+						span.navLink= i.text

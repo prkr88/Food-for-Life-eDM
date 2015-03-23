@@ -15,11 +15,20 @@ var options = {
 		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
 		to: [
 		'Michael Parker <redharvestredharvest@gmail.com>',
-		'Michael Parker <mparker@brandnewmedia.com.au>', 
 		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
 		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
+		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
+		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
+		// 'Nick Fawbert <NickF@brandnewmedia.asia>',
+		// 'Emill Marlinda <EMarlinda@brandnewmedia.asia>'
 		],
-		subject: 'eDM Test'
+		cc:[
+			// 'Michael Parker <mparker@brandnewmedia.com.au>',
+			// 'Tom Garton <TGarton@brandnewmedia.com.au>',
+			// 'Natalie Johnson <NJohnson@brandnewmedia.com.au>',
+			// 'Magdalena Trajkoska <mtrajkoska@brandnewmedia.com.au>'
+		],
+		subject: 'Food for Life eDM'
 	}
 };
 	
@@ -75,9 +84,9 @@ gulp.task('inline', ['build'], function(){
 
 
 gulp.task('tempTask', ['inline'], function(){
-	return gulp.src('./build/temp/video_thumb.html')
-		.pipe(gulp.dest('./public/'))
-		.pipe(reload({stream: true}));
+	// return gulp.src('./build/temp/video_thumb.html')
+	// 	.pipe(gulp.dest('./public/'))
+	// 	.pipe(reload({stream: true}));
 
 })
 
