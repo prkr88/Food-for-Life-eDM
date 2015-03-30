@@ -37,9 +37,8 @@ td {
   font-family: Arial, Verdana, Trebuchet MS !important; }
 
 .background {
-  background-image: url(http://i.imgur.com/MRQdFFa.jpg);
+  background-image: url(http://www.mrwallpaper.com/wallpapers/easter-background.jpg);
   background-repeat: no-repeat;
-  background-position: top center;
   background-size: cover; }
 
 #content-container {
@@ -52,7 +51,7 @@ td {
   min-width: 650px !important;
   padding: 10px;
   background: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   border-top: 3px solid #fff;
   border-left: 3px solid #fff;
   border-right: 3px solid #fff; }

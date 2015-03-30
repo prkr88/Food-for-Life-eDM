@@ -39,7 +39,7 @@ gulp.task('send', function(){
 });
 
 gulp.task('move', function(){
-	return gulp.src('./build/img/*')
+	return gulp.src('./build/img/**/*')
 	.pipe(gulp.dest('./public/assets/'))
 })
 
