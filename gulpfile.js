@@ -3,40 +3,10 @@ var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
 var inlineCss 	= require('gulp-inline-css');
 var jade		= require('gulp-jade');
-var email 		= require('gulp-email');
 var ghPages		= require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var reload 		= browserSync.reload;
 
-var options = {
-	user: 'api:key-a51cf11f46a793c555e2447cdd681e8f',
-	url: 'https://api.mailgun.net/v3/sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org/messages',
-	form: {
-		from: 'Parker Gulp Automation <postmaster@sandbox954d5f24aa234124a8545deb66a02b4f.mailgun.org>',
-		to: [
-		'Michael Parker <redharvestredharvest@gmail.com>',
-		// 'Tom Garton <tgarton@brandnewmedia.com.au>',
-		// 'Aron Du-Shane <adushane@brandnewmedia.com.au>'
-		// 'Dawn Jeremiah <DJeremiah@brandnewmedia.asia>',
-		// 'Claudia Holmes <cholmes@brandnewmedia.com.au>',
-		// 'Nick Fawbert <NickF@brandnewmedia.asia>',
-		// 'Emill Marlinda <EMarlinda@brandnewmedia.asia>'
-		],
-		cc:[
-			// 'Michael Parker <mparker@brandnewmedia.com.au>',
-			// 'Tom Garton <TGarton@brandnewmedia.com.au>',
-			// 'Natalie Johnson <NJohnson@brandnewmedia.com.au>',
-			// 'Magdalena Trajkoska <mtrajkoska@brandnewmedia.com.au>'
-		],
-		subject: 'Food for Life eDM'
-	}
-};
-	
-//test the eDM
-gulp.task('send', function(){
-	return gulp.src('./public/*.html')
-		.pipe(email(options));
-});
 
 gulp.task('move', function(){
 	return gulp.src('./build/img/**/*')
@@ -83,16 +53,9 @@ gulp.task('inline', ['build'], function(){
 });
 
 
-gulp.task('tempTask', ['inline'], function(){
-	// return gulp.src('./build/temp/video_thumb.html')
-	// 	.pipe(gulp.dest('./public/'))
-	// 	.pipe(reload({stream: true}));
-
-})
-
 //compile on change
 gulp.task('watch', function(){
-	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['tempTask']);
+	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['inline']);
 });
 
 //serve to the browser
@@ -106,7 +69,7 @@ gulp.task('serve', function(){
 });
 
 //the dafault task
-gulp.task('default', ['watch', 'serve', 'tempTask']);
+gulp.task('default', ['watch', 'serve', 'inline']);
 
 //deploy to github-pages
 gulp.task('deploy', function(){
