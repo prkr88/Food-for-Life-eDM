@@ -1,3 +1,12 @@
+/*Gulpfile for FFL - SG
+PARKER 2015 @ BNM - MIT License
+
+Default task compiles SASS/JADE and moves styles inline
+Serves to localhost:3000 from `/public`
+
+use `gulp deploy` to push master to gh-pages for staging
+*/
+
 var gulp 		= require('gulp');
 var sass 		= require('gulp-sass');
 var notify 		= require('gulp-notify');
