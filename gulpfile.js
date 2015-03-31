@@ -52,7 +52,6 @@ gulp.task('inline', ['build'], function(){
 		.pipe(reload({stream: true}));
 });
 
-
 //compile on change
 gulp.task('watch', function(){
 	gulp.watch(['./build/scss/*.scss', './build/jade/*.jade'], ['inline']);
