@@ -27,11 +27,12 @@ html(lang='en')
 
 		//- include any @imports as inline-styles
 		include import-styles.jade
+		include datasheet.jade
 
 		//- hidden email preview description
 		.description
-			p(style={'color':'#fff', 'font-size': '0px'}).
-				Miss Tam Chiak Cooks Hokkien pumpkin rice and dishes for everyone that loves Singapore.
+			p(style={'color':'#fff', 'font-size': '0px', 'line-height': '0'})= emailPreview
+				
 		table(align="center")
 			tr
 				td
