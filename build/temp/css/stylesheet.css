@@ -36,7 +36,8 @@ td {
   color: black; }
 
 .loadFont {
-  font-family: Arial, Verdana, Trebuchet MS !important; }
+  font-family: Arial, Verdana, Trebuchet MS !important;
+  text-decoration: none !important; }
 
 .background {
   background-image: url(assets/background.jpg);
