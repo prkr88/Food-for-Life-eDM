@@ -74,7 +74,7 @@ td {
 	max-width: 650px !important;
 	min-width: 650px !important;
 	padding: 10px;
-	background:none;
+	background: transparent; /* The Fallback */
 	background-color: rgba(0, 0, 0, 0.3);
 	border:{
 		top: 3px solid #fff;
