@@ -39,16 +39,6 @@ td {
   font-family: Arial, Verdana, Trebuchet MS !important;
   text-decoration: none !important; }
 
-.background {
-  background-image: url(assets/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale');
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale')"; }
-
 #content-container {
   padding-top: 40px;
   padding-left: 10px;
