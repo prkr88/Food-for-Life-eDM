@@ -59,19 +59,19 @@ td {
 	text-decoration: none !important;
 }
 
-// .background {
-// 	background-image: url(assets/background.jpg);
-// 	background-repeat: no-repeat;
-// 	// background-position: top left;
-// 	background-size: cover;
-// 	// min-height: 400px;
-//   -webkit-background-size: cover;
-//   -moz-background-size: cover;
-//   -o-background-size: cover;
-//   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale');
-// 	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale')";
+.background {
+	background-image: url("assets/ffl-bg_0.jpeg");
+	background-repeat: no-repeat;
+	// background-position: top left;
+	background-size: cover;
+	// min-height: 400px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='assets/background.jpg', sizingMethod='scale')";
 
-// }
+}
 
 #content-container {
 
@@ -84,8 +84,11 @@ td {
 	max-width: 650px !important;
 	min-width: 650px !important;
 	padding: 10px;
-	background: transparent; /* The Fallback */
-	background-color: rgba(0, 0, 0, 0.3);
+	// background-color: #f2f2f2;
+	background-image: url("assets/bg.png");
+  background-repeat: repeat;
+	// background: transparent; The Fallback
+	// background: rgba(0, 0, 0, 0.3);
 	border:{
 		top: 3px solid #fff;
 		left: 3px solid #fff;
