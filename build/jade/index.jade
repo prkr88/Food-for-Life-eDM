@@ -59,32 +59,32 @@ html(lang='en')
 							td
 								span &nbsp;
 	
-
-				tr
-					//- content wrapper
-					td(id="details-container", valign="top")
-						table(cellpadding="0", cellspacing="0", width="600", align="center").details
-							tr
-								td.content-td(align="center")
-									span &nbsp;
-									table(id="banner-container" cellpadding="0", cellspacing="0" width="600")
-										tr
-											td
-												include banner.jade
-							tr
-								td.content-td(align="center")
-									span &nbsp;
-									table(width="600")
-										tr
-											td
-												include video_thumb.jade
-							tr
-								td
-									span &nbsp;
-									table(cellpadding="0", cellspacing="0", width="100%", height="100%", align="center")
-													tr
-														td
-															include footer.jade
+		table(cellpadding="0", cellspacing="0", width="100%", height="100%", align="center")
+			tr
+				//- content wrapper
+				td(id="details-container", valign="top")
+					table(cellpadding="0", cellspacing="0", width="600", align="center").details
+						tr
+							td.content-td(align="center")
+								span &nbsp;
+								table(id="banner-container" cellpadding="0", cellspacing="0" width="600")
+									tr
+										td
+											include banner.jade
+						tr
+							td.content-td(align="center")
+								span &nbsp;
+								table(width="600")
+									tr
+										td
+											include video_thumb.jade
+						tr
+							td
+								span &nbsp;
+								table(cellpadding="0", cellspacing="0", width="100%", height="100%", align="center")
+												tr
+													td
+														include footer.jade
 
 
 

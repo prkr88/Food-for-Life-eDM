@@ -59,14 +59,9 @@ td {
 	text-decoration: none !important;
 }
 
-#background {
-		width: 100%;
-	height: 100%;
-}
-
 .background {
 	background-image: url(assets/background.jpg);
-	background-repeat: no-repeat;
+	background-repeat: no-repeat center center fixed;
 	// background-position: top left;
 	background-size: cover;
 	// min-height: 400px;
