@@ -14,11 +14,10 @@ html(lang='en')
 		//- include flag.jade
 		
 		<!--[if gte mso 9]>
-		<v:background xmlns:v="urn:schemas-microsoft-com:vml" fill="t">
-		<v:fill color="#f2f2f2"/>
-		</v:background>
+		v:background(xmlns:v = 'urn:schemas-microsoft-com:vml', fill='t')
+			v:fill(color= '#f2f2f2')
 		style.
-			.background { background-image: none; background: #f2f2f2; }
+			.background { background-image: none !important; background: #f2f2f2 !important; }
 		<![endif]-->
 
 		//- include any @imports as inline-styles
